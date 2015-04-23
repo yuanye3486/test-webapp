@@ -28,8 +28,14 @@
         </action>
     </package>
 
-    <include file="example.xml"/>
+    <!-- <include file="example.xml"/> -->
 
     <!-- Add packages here -->
+    <package name="default" namespace="/parametertest" extends="struts-default">
+    	<action name="*/*" class="com.fengqiliu.test.webapp.action.{1}Action" method="{2}">
+    		<result>/WEB-INF/jsp/{1}/{2}.jsp</result>
+    	</action>
+    
+    </package>
 
 </struts>
