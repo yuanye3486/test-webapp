@@ -12,10 +12,6 @@ public class SpringmvcParameterController {
 
     @RequestMapping("arrayPara.do")
     public void testArrayPara(int[] array){
-        if (array != null){
-            System.out.println("int[] parameters===> " + array);
-        }else{
-            System.out.println("鍙傛暟寮傚父===> 鍙傛暟涓嶈兘涓虹┖锛�" );
-        }
+    	System.out.println("int[] parameters===> " + array);
     }
 }

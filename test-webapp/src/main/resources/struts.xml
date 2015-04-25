@@ -6,8 +6,9 @@
 <struts>
 
     <constant name="struts.enable.DynamicMethodInvocation" value="false" />
-    <constant name="struts.devMode" value="true" />
-
+    <constant name="struts.enable.SlashesInActionNames" value="true"/>
+    <constant name="struts.devMode" value="false" />
+<!-- 
     <package name="default" namespace="/" extends="struts-default">
 
         <default-action-ref name="index" />
@@ -27,13 +28,13 @@
             </result>
         </action>
     </package>
-
+ -->
     <!-- <include file="example.xml"/> -->
 
     <!-- Add packages here -->
     <package name="default" namespace="/parametertest" extends="struts-default">
     	<action name="*/*" class="com.fengqiliu.test.webapp.action.{1}Action" method="{2}">
-    		<result>/WEB-INF/jsp/{1}/{2}.jsp</result>
+    		<result>/WEB-INF/jsp/{1}/strutsParameter.jsp</result>
     	</action>
     
     </package>
