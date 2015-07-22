@@ -7,7 +7,7 @@ package com.fengqiliu.test.jvm.understandingthejvm.chapter2;
 public class JavaMethodAreaOOM {
 
 	public static void main(String[] args) {
-		while (true) {
+/*		while (true) {
 			Enhancer enhancer = new Enhancer();
 			enhancer.setSuperclass(OOMObject.class);
 			enhancer.setUseCache(false);
@@ -17,7 +17,7 @@ public class JavaMethodAreaOOM {
 				}
 			});
 			enhancer.create();
-		}
+		}*/
 	}
 
 	static class OOMObject {
