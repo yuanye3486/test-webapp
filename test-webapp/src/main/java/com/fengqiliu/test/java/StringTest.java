@@ -3,6 +3,25 @@ package com.fengqiliu.test.java;
 public class StringTest {
 
 	public static void main(String[] args) {
+		
+//		test1();
+//		test2();
+		subStringTest();
+	}
+
+	private static void subStringTest() {
+		String s = "sf/j/slf2322jl23l323j422aklfaakk";
+		System.out.println(s.substring(s.lastIndexOf("/j/"), s.length()));
+		
+	}
+
+	private static void test2() {
+		String s = "12345678\n";
+		System.out.println(s.substring(0, s.length()-2));
+		
+	}
+
+	private static void test1() {
 		String s = "helloqweoqweq";
 		s = s.replace("o", "\n");
 		String[] sa = s.split(";");
@@ -15,5 +34,7 @@ public class StringTest {
 		System.out.println(newStr);
 		
 	}
+	
+	
 
 }

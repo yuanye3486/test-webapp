@@ -32,12 +32,27 @@ public class FileTest {
       		"7" 发布采集时间差
 			"6" 采集入库时间差
 		 */
-		importToFalcon("52", "group", new File("C:\\Users\\Administrator\\Desktop\\redis-backup\\52-4.txt"));
+//		importToFalcon("52", "group", new File("C:\\Users\\Administrator\\Desktop\\redis-backup\\52-4.txt"));
+		
+//		filePropertiesTest();
+		
+		renameToTest();
 	}
 	
-	
-	
-	
+
+	private static void renameToTest() {
+		File file = new File("C:\\Users\\Administrator\\Desktop\\push.txt");
+		File newFile = new File("C:\\Users\\Administrator\\Desktop\\push-01.txt");
+		file.renameTo(newFile);
+		file = newFile;
+		System.out.println("old file = " + file.getAbsolutePath());
+		System.out.println("new file = " + newFile.getAbsolutePath());
+		System.out.println(file.equals(newFile));
+	}
+
+
+
+
 
 	public static void importToFalcon(String dataRepertoryId, String monitorType, File srcFile) throws Exception {
 		String url = "http://192.168.73.128:1989/v1/push";
