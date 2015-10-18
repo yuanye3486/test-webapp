@@ -101,7 +101,7 @@ public class JedisTest {
 	}
 	
 	private void writeLog(String info) throws IOException{
-		Collection<String> msg = new ArrayList<String>(1);
+		Collection<String> msg = new ArrayList<>(1);
 		msg.add(info);
 		FileUtils.writeLines(new File("C:\\Users\\Administrator\\Desktop\\redis-backup\\log.txt"), msg, true);
 	}
