@@ -13,7 +13,7 @@ public class ConcreteCommand1 extends Command {
     }//必须实现一个命令
 
     public void execute() {
-    //业务处理
+        //业务处理
         this.receiver.doSomething();
     }
 }

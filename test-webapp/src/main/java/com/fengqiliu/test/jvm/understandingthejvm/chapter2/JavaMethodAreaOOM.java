@@ -2,13 +2,14 @@ package com.fengqiliu.test.jvm.understandingthejvm.chapter2;
 
 /**
  * VM Args： -XX:PermSize=10M -XX:MaxPermSize=10M
+ *
  * @author zzm
  */
 public class JavaMethodAreaOOM {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 /*		while (true) {
-			Enhancer enhancer = new Enhancer();
+            Enhancer enhancer = new Enhancer();
 			enhancer.setSuperclass(OOMObject.class);
 			enhancer.setUseCache(false);
 			enhancer.setCallback(new MethodInterceptor() {
@@ -18,9 +19,9 @@ public class JavaMethodAreaOOM {
 			});
 			enhancer.create();
 		}*/
-	}
+    }
 
-	static class OOMObject {
+    static class OOMObject {
 
-	}
+    }
 }

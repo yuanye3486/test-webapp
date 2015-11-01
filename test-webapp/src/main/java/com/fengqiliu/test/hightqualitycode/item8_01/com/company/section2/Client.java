@@ -1,19 +1,17 @@
 package com.fengqiliu.test.hightqualitycode.item8_01.com.company.section2;
 
-import java.io.FileNotFoundException;
-
 public class Client {
-	public static void main(String[] args) {
-		
-	}
-	
-	public void doStuff(){
-		try{
-			//do something
-		}catch(Exception e){
-			e.printStackTrace();
-		}
-	}
+    public static void main(String[] args) {
+
+    }
+
+    public void doStuff() {
+        try {
+            //do something
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 //	
 //	public void doStuff2(){
 //		try{

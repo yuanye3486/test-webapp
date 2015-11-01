@@ -9,16 +9,16 @@ import java.util.Vector;
 
 public class Client {
 
-	public static void main(String[] args) {
-		int max =7000000;
-		List<String> strs = new Vector<String>();
-		
-		long begin = System.currentTimeMillis();
-		for(int i=0;i<max;i++){
-			strs.add("a");
-		}
-		System.out.println(System.currentTimeMillis() - begin);
-	}
+    public static void main(String[] args) {
+        int max = 7000000;
+        List<String> strs = new Vector<String>();
+
+        long begin = System.currentTimeMillis();
+        for (int i = 0; i < max; i++) {
+            strs.add("a");
+        }
+        System.out.println(System.currentTimeMillis() - begin);
+    }
 }
 
 

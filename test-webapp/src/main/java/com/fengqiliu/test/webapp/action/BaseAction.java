@@ -2,8 +2,8 @@ package com.fengqiliu.test.webapp.action;
 
 import com.opensymphony.xwork2.ActionSupport;
 
-public class BaseAction extends ActionSupport{
+public class BaseAction extends ActionSupport {
 
-	private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
 }

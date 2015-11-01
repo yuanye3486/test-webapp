@@ -4,7 +4,7 @@ import javax.swing.*;
 
 public class SortContext {
     public static final String[] SORTER_NAMES = new String[]{BubbleSort.NAME,
-            QuickSort.NAME, ShellSort.NAME, StraightInsertSort.NAME,BinaryInsertionSort.NAME,
+            QuickSort.NAME, ShellSort.NAME, StraightInsertSort.NAME, BinaryInsertionSort.NAME,
             BaseSort.NAME, SelectSort.NAME, HeapSort.NAME, MergeSort.NAME};
     private Sortable sorter; // 排序器
     private int[] unsortedSequence; // 未排序前的序列

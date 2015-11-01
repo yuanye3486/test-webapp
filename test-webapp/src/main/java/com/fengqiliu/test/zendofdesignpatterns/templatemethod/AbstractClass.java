@@ -8,7 +8,7 @@ public abstract class AbstractClass {
 
     protected abstract void doSomething();
 
-    public void templateMethod(){
+    public void templateMethod() {
         doAnything();
         doSomething();
     }

@@ -4,13 +4,12 @@ import javax.swing.*;
 
 public abstract class Sortable {
 
+    protected long startTime;
+    protected long endTime;
     /**
      * 存放排序过程中的排序信息
      */
     StringBuffer messageBuffer = new StringBuffer();
-
-    protected long startTime;
-    protected long endTime;
 
     /**
      * 执行排序算法，并返回排序后的数字序列。
@@ -41,7 +40,7 @@ public abstract class Sortable {
      *
      * @return
      */
-    public long getSortTime(){
+    public long getSortTime() {
         return endTime - startTime;
     }
 }

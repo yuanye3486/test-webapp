@@ -5,10 +5,10 @@ import java.util.List;
 
 public class Client {
 
-	public static void main(String[] args) {
-		List<String> names = Arrays.asList("张三","李四","王五");
-		
-	}
+    public static void main(String[] args) {
+        List<String> names = Arrays.asList("张三", "李四", "王五");
+
+    }
 }
 
 

@@ -18,9 +18,9 @@ public abstract class Handler {
              * 判断是否有下一个处理者
              */
             if (this.nextHandler != null) {
-               response = this.nextHandler.handlerMessage(request);
+                response = this.nextHandler.handlerMessage(request);
             } else {
-               System.out.println("没有处理者！");
+                System.out.println("没有处理者！");
             }
         }
         return response;

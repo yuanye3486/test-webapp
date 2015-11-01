@@ -43,7 +43,7 @@ public class BinaryInsertionSort extends Sortable {
             unsortedSequence[hight + 1] = unsortedSequence[0];    // 插入
 
             messageBuffer.append("第 ").append(++count).append(" 趟： ")
-                         .append(Util.intArrayToString(unsortedSequence)).append("\n");
+                    .append(Util.intArrayToString(unsortedSequence)).append("\n");
             messagePane.setText(messageBuffer.toString());
         }
     }

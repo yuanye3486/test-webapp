@@ -1,12 +1,12 @@
 package com.fengqiliu.test.hightqualitycode.item12_03.com.company.section3;
 
 public class Client {
-	/*
-	 * 该算法不如某某算法优秀，可以优化，时间太紧，以后再说
-	 */
-	public void doSomethong(){
-		
-	}
+    /*
+     * 该算法不如某某算法优秀，可以优化，时间太紧，以后再说
+     */
+    public void doSomethong() {
+
+    }
 }
 
 /**
@@ -15,18 +15,18 @@ public class Client {
  * 2010-11-30  李四   重构了XXX方法
  * 2011-02-06  王五   删除了XXXX无用方法
  * 2011-04-08  马六   优化了XXX的性能
- 
  */
-class Foo{
+class Foo {
 
-	/**
-	* Attempt to acquire the lock for the given mutex. If the mutex has already
-	* been acquired, the call returns immediately with APR_EBUSY. Note: it
-	* is important that the APR_STATUS_IS_EBUSY(s) macro be used to determine
-	* if the return value was APR_EBUSY, for portability reasons.
-	* @param mutex the mutex on which to attempt the lock acquiring.
-	*/
-	public static native int trylock(long mutex);
+    /**
+     * Attempt to acquire the lock for the given mutex. If the mutex has already
+     * been acquired, the call returns immediately with APR_EBUSY. Note: it
+     * is important that the APR_STATUS_IS_EBUSY(s) macro be used to determine
+     * if the return value was APR_EBUSY, for portability reasons.
+     *
+     * @param mutex the mutex on which to attempt the lock acquiring.
+     */
+    public static native int trylock(long mutex);
 
-		
+
 }

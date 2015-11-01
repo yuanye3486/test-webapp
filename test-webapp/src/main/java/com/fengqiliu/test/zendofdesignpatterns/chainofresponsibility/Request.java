@@ -5,7 +5,7 @@ package com.fengqiliu.test.zendofdesignpatterns.chainofresponsibility;
  */
 public class Request {
     //请求的等级
-    public Level getRequestLevel(){
+    public Level getRequestLevel() {
         return null;
     }
 }

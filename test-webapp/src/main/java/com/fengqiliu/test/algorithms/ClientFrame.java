@@ -18,22 +18,6 @@ public class ClientFrame extends JFrame {
     private JTextPane messagePane;
 
     /**
-     * Launch the application.
-     */
-    public static void main(String[] args) {
-        EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                try {
-                    ClientFrame frame = new ClientFrame();
-                    frame.setVisible(true);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
-        });
-    }
-
-    /**
      * Create the frame.
      */
     public ClientFrame() {
@@ -98,6 +82,22 @@ public class ClientFrame extends JFrame {
         button.setBounds(308, 429, 93, 23);
         contentPane.add(button);
 
+    }
+
+    /**
+     * Launch the application.
+     */
+    public static void main(String[] args) {
+        EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                try {
+                    ClientFrame frame = new ClientFrame();
+                    frame.setVisible(true);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
     }
 
     //	初始化 combobox 中的 子项

@@ -3,7 +3,6 @@ package com.fengqiliu.test.java.file;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.io.FileWriter;
 
 /**
  * Created by LiuFengqi on 2015/10/25.
@@ -44,7 +43,7 @@ public class FileTest2 {
             byte[] buffer = new byte[1024];
             int readLength = 0;
             while ((readLength = fis.read(buffer)) != -1) {
-                byte[] newBuffer = new String(buffer,0,readLength,"GB2312").getBytes("utf-8");
+                byte[] newBuffer = new String(buffer, 0, readLength, "GB2312").getBytes("utf-8");
                 fos.write(newBuffer, 0, newBuffer.length);
             }
         } catch (Exception e) {

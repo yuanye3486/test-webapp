@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class SpringmvcParameterController {
 
     @RequestMapping("arrayPara.do")
-    public void testArrayPara(int[] array){
-    	System.out.println("int[] parameters===> " + array);
+    public void testArrayPara(int[] array) {
+        System.out.println("int[] parameters===> " + array);
     }
 }

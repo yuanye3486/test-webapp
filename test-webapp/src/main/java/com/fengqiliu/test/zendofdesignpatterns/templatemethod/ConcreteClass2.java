@@ -6,7 +6,7 @@ package com.fengqiliu.test.zendofdesignpatterns.templatemethod;
 public class ConcreteClass2 extends AbstractClass {
     @Override
     protected void doAnything() {
-       System.out.println(getClass().getName() + " do anything");
+        System.out.println(getClass().getName() + " do anything");
     }
 
     @Override

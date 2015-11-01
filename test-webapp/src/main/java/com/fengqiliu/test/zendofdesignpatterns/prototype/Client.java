@@ -5,7 +5,7 @@ package com.fengqiliu.test.zendofdesignpatterns.prototype;
  */
 public class Client {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         PrototypeClass prototype = new PrototypeClass();
         PrototypeClass p = prototype.clone();
         System.out.println(prototype.equals(p));

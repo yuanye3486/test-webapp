@@ -8,9 +8,10 @@ public class Director {
 
     /**
      * 构建不同产品
+     *
      * @return
      */
-    public Product getAProduct(){
+    public Product getAProduct() {
         builder.setPart();
         return builder.buildProduct();
     }

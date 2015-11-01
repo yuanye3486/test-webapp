@@ -4,7 +4,7 @@ package com.fengqiliu.test.zendofdesignpatterns.abstractfactory;
  * Created by LiuFengqi on 2015/9/14.
  */
 public class Client {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         AbstractCreator creator1 = new Creator1();
         AbstractProductA a1 = creator1.createProductA();
         AbstractProductB b1 = creator1.createProductB();

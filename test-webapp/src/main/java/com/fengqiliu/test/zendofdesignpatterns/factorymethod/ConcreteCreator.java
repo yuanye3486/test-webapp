@@ -7,9 +7,9 @@ public class ConcreteCreator extends Creator {
     @Override
     public <T extends Product> T createProduct(Class<T> obj) {
         Product product = null;
-        if(null != obj){
+        if (null != obj) {
             try {
-                product =  (Product) Class.forName(obj.getName()).newInstance();
+                product = (Product) Class.forName(obj.getName()).newInstance();
             } catch (Exception e) {
                 e.printStackTrace();
             }

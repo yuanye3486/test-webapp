@@ -5,6 +5,7 @@ package com.fengqiliu.test.zendofdesignpatterns.builder;
  */
 public class ConcreteBuilder extends Builder {
     private Product product = new Product();
+
     @Override
     public void setPart() {
         System.out.println("装配零件，组装产品...");

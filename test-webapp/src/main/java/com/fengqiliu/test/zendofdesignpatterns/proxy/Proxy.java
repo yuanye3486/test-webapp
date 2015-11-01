@@ -14,7 +14,7 @@ public class Proxy implements Subject {
 
     //通过构造函数传递代理者
     public Proxy(Object... objects) {
-        subject = (Subject)objects[0];
+        subject = (Subject) objects[0];
     }
 
     //实现接口中定义的方法
@@ -27,7 +27,7 @@ public class Proxy implements Subject {
 
     //预处理
     private void before() {
-    System.out.println("Proxy.before() ...");
+        System.out.println("Proxy.before() ...");
     }
 
     //善后处理
