@@ -1,11 +1,6 @@
 package com.fengqiliu.test.java;
 
-import java.io.BufferedOutputStream;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.FileReader;
+import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -14,6 +9,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.zip.GZIPInputStream;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 
 import com.fengqiliu.test.httpclient.HttpClientTest;
@@ -33,14 +29,34 @@ public class FileTest {
 			"6" 采集入库时间差
 		 */
 //		importToFalcon("52", "group", new File("C:\\Users\\Administrator\\Desktop\\redis-backup\\52-4.txt"));
-		
 //		filePropertiesTest();
-		
-		renameToTest();
+//		renameToTest();
+//        getAbsolutePath();
+//        downloadFile();
+        getFilePath();
 	}
-	
 
-	private static void renameToTest() {
+    private static void getFilePath(){
+        String filePath = FileTest.class.getResource("/c3p0.properties").getPath();
+        System.out.println(filePath);
+    }
+
+    private static void downloadFile() throws IOException {
+        File file = new File("dc.trs.org.cn/oa/temp/crawl-config-export/1453108631732.zip");
+        byte[] content = FileUtils.readFileToByteArray(file);
+        System.out.print(content);
+    }
+
+
+    private static void getAbsolutePath(){
+        File file = new File("C:\\Users\\Administrator\\Desktop");
+        System.out.println("file.getName():" + file.getName());
+        System.out.println("file.getAbsolutePath():" + file.getAbsolutePath());
+        System.out.println("file.getPath():" + file.getPath());
+    }
+
+
+    private static void renameToTest() {
 		File file = new File("C:\\Users\\Administrator\\Desktop\\push.txt");
 		File newFile = new File("C:\\Users\\Administrator\\Desktop\\push-01.txt");
 		file.renameTo(newFile);

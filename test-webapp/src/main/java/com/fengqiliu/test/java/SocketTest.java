@@ -5,14 +5,44 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.PrintWriter;
+import java.net.InetSocketAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 
 public class SocketTest {
 
-	public static void main(String[] args) {
-		receive();
+	public static void main(String[] args) throws IOException {
+//		receive();
+        testPort2();
 	}
+
+    private static void testPort2() throws IOException {
+        // 192.168.200.114
+        // 119.254.86.250
+        // 119.254.64.16
+
+        Socket socket = new Socket("119.254.64.19",9092);
+        if (socket.isConnected()){
+            System.out.println("可连接");
+        }else {
+            System.out.println("不可连接");
+        }
+    }
+
+    private static void testPort(){
+        try{
+            ServerSocket s = new ServerSocket();
+            s.bind(new InetSocketAddress("119.254.64.16",9092));
+            s.close();
+        }catch(IOException e){
+            e.printStackTrace();
+            if(e instanceof java.net.BindException) {
+                System.out.println(" aready in use.");
+            }else {
+                System.err.println(" other error..");
+            }
+        }
+    }
 
 	private static void receive() {
 		try {
