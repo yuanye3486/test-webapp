@@ -6,6 +6,12 @@ import java.util.List;
 public class EnumTest {
 
     public static void main(String[] args) {
+
+    }
+
+
+
+    private static void test(){
         System.out.println(MonitorType.getValue("1"));
         System.out.println(MonitorType.DB_TOTAL_RECORD.code);
         List<MonitorType> list = EnumTest.MonitorType.list();
@@ -15,7 +21,7 @@ public class EnumTest {
         }
     }
 
-    static enum MonitorType {
+    enum MonitorType {
 
         DB_TOTAL_RECORD("1", "总数据量监控"),
         SITE_RECORD("2", "ZHANDIAN监控");
